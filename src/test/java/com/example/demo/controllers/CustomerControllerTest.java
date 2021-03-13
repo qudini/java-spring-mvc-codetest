@@ -56,7 +56,7 @@ public class CustomerControllerTest {
 
     @Test
     public void requestRespondsWithListOfSortedCustomers() throws Exception {
-        mvc.perform(post("/sortCustomers")
+        mvc.perform(post("/customers/sortCustomers")
                 .content(asJsonString(request))
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON))
